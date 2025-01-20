@@ -82,8 +82,9 @@ const App = () => {
         value: /^\d{1,3}$/, 
         message: "Age must be a valid number with up to 3 digits",
       },
-      validate: (value) =>
-        value >= 0 && value <= 999 || "Age must be between 0 and 999",
+    
+        validate: (value) => (value >= 0 && value <= 100) || "Age must be between 0 and 100",
+
     })}
     type="number"
     className="form-control"
